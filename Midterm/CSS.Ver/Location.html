@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Location</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: Location;
+	}
+	#Location * {
+		margin: 0;
+		padding: 0;
+	}
+	#Location {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 375px;
+		height: 812px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: Location;
+		--web-view-id: Location;
+		--web-enable-deep-linking: true;
+	}
+	#__25 {
+		opacity: 1;
+		position: absolute;
+		width: 379.5px;
+		height: 79px;
+		left: -3.5px;
+		top: 0px;
+		overflow: visible;
+	}
+	#___34 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.___34 {
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		height: 79px;
+		left: 3.5px;
+		top: 0px;
+	}
+	#UP_ {
+		opacity: 1;
+		position: absolute;
+		left: 154.5px;
+		top: 28px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 74px;
+		height: 39px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,1);
+	}
+	#___1 {
+		opacity: 0.3;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161)) blur(30px);
+		fill: transparent;
+		stroke: rgb(112, 112, 112);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.___1 {
+		overflow: visible;
+		position: absolute;
+		top: 78.5px;
+		left: 0px;
+		width: 379px;
+		height: 2px;
+	}
+	#__29 {
+		opacity: 1;
+		position: absolute;
+		width: 99.135px;
+		height: 35.067px;
+		left: 40.8px;
+		top: 727.8px;
+		overflow: visible;
+	}
+	#___39 {
+		opacity: 0.8;
+		filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.161));
+		fill: rgba(0,238,143,1);
+	}
+	.___39 {
+		position: absolute;
+		overflow: visible;
+		width: 99.135px;
+		height: 35.067px;
+		left: 0px;
+		top: 0px;
+	}
+	#Back {
+		opacity: 1;
+		position: absolute;
+		left: 33.2px;
+		top: 8.2px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 35px;
+		height: 17px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#__28 {
+		opacity: 1;
+		position: absolute;
+		width: 99.135px;
+		height: 35.067px;
+		left: 235.8px;
+		top: 727.8px;
+		overflow: visible;
+	}
+	#___12 {
+		opacity: 0.8;
+		filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.161));
+		fill: rgba(0,238,143,1);
+	}
+	.___12 {
+		position: absolute;
+		overflow: visible;
+		width: 99.135px;
+		height: 35.067px;
+		left: 0px;
+		top: 0px;
+	}
+	#Next {
+		opacity: 1;
+		position: absolute;
+		left: 32.2px;
+		top: 8.2px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 35px;
+		height: 17px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		color: rgba(255,255,255,1);
+	}
+	#Location_ {
+		opacity: 1;
+		position: absolute;
+		left: 39px;
+		top: 340px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 87px;
+		white-space: nowrap;
+		line-height: 86.4000015258789px;
+		margin-top: -33.20000076293945px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(0,238,166,1);
+	}
+	#See_on_map_ {
+		opacity: 1;
+		position: absolute;
+		left: 39px;
+		top: 489px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 118px;
+		white-space: nowrap;
+		line-height: 86.4000015258789px;
+		margin-top: -33.20000076293945px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(0,238,166,1);
+	}
+	#___15 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.___15 {
+		overflow: visible;
+		position: absolute;
+		top: 633.5px;
+		left: 172.5px;
+		width: 0px;
+		height: 0px;
+	}
+	#___4 {
+		opacity: 1;
+		fill: rgba(212,212,212,1);
+	}
+	.___4 {
+		position: absolute;
+		overflow: visible;
+		width: 14px;
+		height: 14px;
+		left: 181px;
+		top: 506px;
+	}
+	#___52 {
+		opacity: 0.8;
+		filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.161));
+		fill: rgba(255,255,255,1);
+		stroke: rgb(0, 238, 166);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 10;
+		shape-rendering: auto;
+	}
+	.___52 {
+		position: absolute;
+		overflow: visible;
+		width: 334.648px;
+		height: 52.445px;
+		left: 18.151px;
+		top: 401.235px;
+	}
+	#WeChat___20190319221430 {
+		opacity: 1;
+		fill: url(#WeChat___20190319221430_A21_Rectangle_272_pattern);
+		stroke: rgb(225, 225, 225);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.WeChat___20190319221430 {
+		position: absolute;
+		overflow: visible;
+		width: 189px;
+		height: 154px;
+		left: 39px;
+		top: 536px;
+	}
+</style>
+</head>
+<body>
+<div id="Location">
+	<div id="__25">
+		<svg class="___34">
+			<rect id="___34" rx="0" ry="0" x="0" y="0" width="376" height="79">
+			</rect>
+		</svg>
+		<div id="UP_">
+			<span>UP!</span>
+		</div>
+		<svg class="___1">
+			<path id="___1" d="M 0 0 L 379 0">
+			</path>
+		</svg>
+	</div>
+	<a href="Skill.html"><div id="__29">
+		<svg class="___39">
+			<rect id="___39" rx="17.533449172973633" ry="17.533449172973633" x="0" y="0" width="99.135" height="35.067">
+			</rect>
+		</svg>
+		<div id="Back">
+			<span>Back</span>
+		</div>
+	</div></a>
+	<a href="Description.html"><div id="__28">
+		<svg class="___12">
+			<rect id="___12" rx="17.533449172973633" ry="17.533449172973633" x="0" y="0" width="99.135" height="35.067">
+			</rect>
+		</svg>
+		<div id="Next">
+			<span>Next</span>
+		</div>
+	</div></a>
+	<div id="Location_">
+		<span>Location:</span>
+	</div>
+	<div id="See_on_map_">
+		<span>See on map:</span>
+	</div>
+	<svg class="___15">
+		<path id="___15" d="M 0 0 L 0 0">
+		</path>
+	</svg>
+	<svg class="___4">
+		<ellipse id="___4" rx="7" ry="7" cx="7" cy="7">
+		</ellipse>
+	</svg>
+	<svg class="___52">
+		<rect id="___52" rx="25" ry="25" x="0" y="0" width="332.648" height="50.445">
+		</rect>
+	</svg>
+	<a href="Map.html"><svg class="WeChat___20190319221430">
+		<pattern elementId="WeChat___20190319221430_A21_Rectangle_272" id="WeChat___20190319221430_A21_Rectangle_272_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="WeChat___20190319221430_A21_Rectangle_272_pattern.png" xlink:href="WeChat___20190319221430_A21_Rectangle_272_pattern.png"></image>
+		</pattern>
+		<rect id="WeChat___20190319221430" rx="17" ry="17" x="0" y="0" width="189" height="154">
+		</rect>
+	</svg></a>
+</div>
+</body>
+</html>

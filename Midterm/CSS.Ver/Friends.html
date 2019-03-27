@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Friends</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: Friends;
+	}
+	#Friends * {
+		margin: 0;
+		padding: 0;
+	}
+	#Friends {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 375px;
+		height: 812px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: Friends;
+		--web-view-id: Friends;
+		--web-enable-deep-linking: true;
+	}
+	#___65 {
+		opacity: 1;
+		fill: rgba(242,242,242,1);
+	}
+	.___65 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 535px;
+		left: 0px;
+		top: 169px;
+	}
+	#___59 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.___59 {
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		height: 75px;
+		left: 0px;
+		top: 183px;
+	}
+	#___60 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.___60 {
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		height: 75px;
+		left: 0px;
+		top: 270px;
+	}
+	#___63 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.___63 {
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		height: 75px;
+		left: 0px;
+		top: 442px;
+	}
+	#___61 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.___61 {
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		height: 75px;
+		left: 0px;
+		top: 356px;
+	}
+	#___62 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.___62 {
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		height: 75px;
+		left: 0px;
+		top: 528px;
+	}
+	#___64 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.___64 {
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		height: 75px;
+		left: 0px;
+		top: 614px;
+	}
+	#__25 {
+		opacity: 1;
+		position: absolute;
+		width: 379.5px;
+		height: 79px;
+		left: -3.5px;
+		top: 0px;
+		overflow: visible;
+	}
+	#___34 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.___34 {
+		position: absolute;
+		overflow: visible;
+		width: 376px;
+		height: 79px;
+		left: 3.5px;
+		top: 0px;
+	}
+	#UP_ {
+		opacity: 1;
+		position: absolute;
+		left: 154.5px;
+		top: 28px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 74px;
+		height: 39px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(0,0,0,1);
+	}
+	#___1 {
+		opacity: 0.3;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161)) blur(30px);
+		fill: transparent;
+		stroke: rgb(112, 112, 112);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.___1 {
+		overflow: visible;
+		position: absolute;
+		top: 78.5px;
+		left: 0px;
+		width: 379px;
+		height: 2px;
+	}
+	#__15 {
+		opacity: 1;
+		position: absolute;
+		width: 379px;
+		height: 87px;
+		left: -3.5px;
+		top: 725px;
+		overflow: visible;
+	}
+	#___32 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+	}
+	.___32 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 87px;
+		left: 3.5px;
+		top: 0px;
+	}
+	#___30 {
+		opacity: 0.37;
+		fill: rgba(0,238,143,1);
+	}
+	.___30 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 82px;
+		left: 3.5px;
+		top: 5px;
+	}
+	#___6 {
+		opacity: 0.3;
+		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161)) blur(30px);
+		fill: transparent;
+		stroke: rgb(112, 112, 112);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.___6 {
+		overflow: visible;
+		position: absolute;
+		top: 0.5px;
+		left: 0px;
+		width: 379px;
+		height: 2px;
+	}
+	#bar {
+		opacity: 1;
+		fill: url(#bar_A10_Rectangle_162_pattern);
+	}
+	.bar {
+		position: absolute;
+		overflow: visible;
+		width: 105px;
+		height: 83px;
+		left: 93px;
+		top: 730px;
+	}
+	#__8 {
+		opacity: 1;
+		position: absolute;
+		width: 33px;
+		height: 33px;
+		left: 323px;
+		top: 37px;
+		overflow: visible;
+	}
+	#___19 {
+		opacity: 1;
+		fill: rgba(0,238,143,1);
+	}
+	.___19 {
+		position: absolute;
+		overflow: visible;
+		width: 33px;
+		height: 33px;
+		left: 0px;
+		top: 0px;
+	}
+	#icon_write {
+		opacity: 1;
+		fill: url(#icon_write_A10_Rectangle_165_pattern);
+	}
+	.icon_write {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 20px;
+		left: 6px;
+		top: 7px;
+	}
+	#__11 {
+		opacity: 1;
+		position: absolute;
+		width: 56.538px;
+		height: 42.067px;
+		left: 216px;
+		top: 761.933px;
+		overflow: visible;
+	}
+	#___24 {
+		opacity: 1;
+		filter: drop-shadow(0px 1px 7px rgba(0, 35, 5, 0.741));
+		fill: rgba(255,255,255,1);
+	}
+	.___24 {
+		position: absolute;
+		overflow: visible;
+		width: 77.538px;
+		height: 63.067px;
+		left: 0px;
+		top: 0px;
+	}
+	#news {
+		opacity: 1;
+		fill: url(#news_A10_Rectangle_168_pattern);
+	}
+	.news {
+		position: absolute;
+		overflow: visible;
+		width: 24.769px;
+		height: 24.769px;
+		left: 15.811px;
+		top: 7.471px;
+	}
+	#__10 {
+		opacity: 1;
+		position: absolute;
+		width: 84px;
+		height: 62.5px;
+		left: 103.538px;
+		top: 741.5px;
+		overflow: visible;
+	}
+	#___23 {
+		opacity: 1;
+		filter: drop-shadow(0px 1px 7px rgba(0, 35, 5, 0.741));
+		fill: rgba(255,255,255,1);
+	}
+	.___23 {
+		position: absolute;
+		overflow: visible;
+		width: 105px;
+		height: 83.5px;
+		left: 0px;
+		top: 0px;
+	}
+	#friends {
+		opacity: 1;
+		fill: url(#friends_A10_Rectangle_171_pattern);
+	}
+	.friends {
+		position: absolute;
+		overflow: visible;
+		width: 32.88px;
+		height: 28.102px;
+		left: 25.187px;
+		top: 16.74px;
+	}
+	#__13 {
+		opacity: 1;
+		position: absolute;
+		width: 56.538px;
+		height: 42.067px;
+		left: 19px;
+		top: 761.933px;
+		overflow: visible;
+	}
+	#___22 {
+		opacity: 1;
+		filter: drop-shadow(0px 1px 7px rgba(0, 35, 5, 0.741));
+		fill: rgba(255,255,255,1);
+	}
+	.___22 {
+		position: absolute;
+		overflow: visible;
+		width: 77.538px;
+		height: 63.067px;
+		left: 0px;
+		top: 0px;
+	}
+	#home__1_ {
+		opacity: 1;
+		fill: url(#home__1__A10_Rectangle_174_pattern);
+	}
+	.home__1_ {
+		position: absolute;
+		overflow: visible;
+		width: 21.216px;
+		height: 21.216px;
+		left: 17.495px;
+		top: 10.594px;
+	}
+	#__12 {
+		opacity: 1;
+		position: absolute;
+		width: 56.538px;
+		height: 42.067px;
+		left: 300px;
+		top: 761.933px;
+		overflow: visible;
+	}
+	#___25 {
+		opacity: 1;
+		filter: drop-shadow(0px 1px 7px rgba(0, 35, 5, 0.741));
+		fill: rgba(255,255,255,1);
+	}
+	.___25 {
+		position: absolute;
+		overflow: visible;
+		width: 77.538px;
+		height: 63.067px;
+		left: 0px;
+		top: 0px;
+	}
+	#__9 {
+		opacity: 1;
+		position: absolute;
+		width: 16.872px;
+		height: 9.641px;
+		left: 19.833px;
+		top: 15.372px;
+		overflow: visible;
+	}
+	#___3 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(0, 0, 0);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.___3 {
+		overflow: visible;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 16.872px;
+		height: 1px;
+	}
+	#___4 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(0, 0, 0);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.___4 {
+		overflow: visible;
+		position: absolute;
+		top: 4.821px;
+		left: 0px;
+		width: 16.872px;
+		height: 1px;
+	}
+	#___5 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(0, 0, 0);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.___5 {
+		overflow: visible;
+		position: absolute;
+		top: 9.641px;
+		left: 0px;
+		width: 16.872px;
+		height: 1px;
+	}
+	#Friends_A10_Text_62 {
+		opacity: 1;
+		position: absolute;
+		left: 35px;
+		top: 123px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		line-height: 86.4000015258789px;
+		margin-top: -33.20000076293945px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(0,238,166,1);
+	}
+	#Daddy_Pig {
+		opacity: 1;
+		position: absolute;
+		left: 108px;
+		top: 209px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 100px;
+		white-space: nowrap;
+		line-height: 86.4000015258789px;
+		margin-top: -33.20000076293945px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#George {
+		opacity: 1;
+		position: absolute;
+		left: 108px;
+		top: 296px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		line-height: 86.4000015258789px;
+		margin-top: -33.20000076293945px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Mummy_Pig {
+		opacity: 1;
+		position: absolute;
+		left: 108px;
+		top: 382px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 114px;
+		white-space: nowrap;
+		line-height: 86.4000015258789px;
+		margin-top: -33.20000076293945px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Uncle_Pig_____ {
+		opacity: 1;
+		position: absolute;
+		left: 108px;
+		top: 468px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 120px;
+		white-space: nowrap;
+		line-height: 86.4000015258789px;
+		margin-top: -33.20000076293945px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Auntie_Pig {
+		opacity: 1;
+		position: absolute;
+		left: 108px;
+		top: 554px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 100px;
+		white-space: nowrap;
+		line-height: 86.4000015258789px;
+		margin-top: -33.20000076293945px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Chloe_Pig {
+		opacity: 1;
+		position: absolute;
+		left: 108px;
+		top: 640px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		line-height: 86.4000015258789px;
+		margin-top: -33.20000076293945px;
+		text-align: left;
+		font-family: Avenir LT 65 Medium;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#peppa_dad {
+		opacity: 1;
+		fill: url(#peppa_dad_A10_Rectangle_177_pattern);
+	}
+	.peppa_dad {
+		position: absolute;
+		overflow: visible;
+		width: 97px;
+		height: 54px;
+		left: 8px;
+		top: 194px;
+	}
+	#login_and_sign_up {
+		opacity: 1;
+		fill: url(#login_and_sign_up_A10_Rectangle_179_pattern);
+	}
+	.login_and_sign_up {
+		position: absolute;
+		overflow: visible;
+		width: 39px;
+		height: 42px;
+		left: 37px;
+		top: 287px;
+	}
+	#ID1860172_0 {
+		opacity: 1;
+		fill: url(#ID1860172_0_A10_Rectangle_181_pattern);
+	}
+	.ID1860172_0 {
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		height: 54px;
+		left: 30px;
+		top: 539px;
+	}
+	#cc {
+		opacity: 1;
+		fill: url(#cc_A10_Rectangle_183_pattern);
+	}
+	.cc {
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		height: 40px;
+		left: 30px;
+		top: 632px;
+	}
+	#ID1989956_0 {
+		opacity: 1;
+		fill: url(#ID1989956_0_A10_Rectangle_185_pattern);
+	}
+	.ID1989956_0 {
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		height: 53px;
+		left: 31px;
+		top: 453px;
+	}
+	#Mummy_Pig_A10_Rectangle_186 {
+		opacity: 1;
+		fill: url(#Mummy_Pig_A10_Rectangle_187_pattern);
+	}
+	.Mummy_Pig_A10_Rectangle_186 {
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		height: 47px;
+		left: 40px;
+		top: 370px;
+	}
+</style>
+</head>
+<body>
+<div id="Friends">
+	<svg class="___65">
+		<rect id="___65" rx="0" ry="0" x="0" y="0" width="375" height="535">
+		</rect>
+	</svg>
+	<svg class="___59">
+		<rect id="___59" rx="0" ry="0" x="0" y="0" width="376" height="75">
+		</rect>
+	</svg>
+	<svg class="___60">
+		<rect id="___60" rx="0" ry="0" x="0" y="0" width="376" height="75">
+		</rect>
+	</svg>
+	<svg class="___63">
+		<rect id="___63" rx="0" ry="0" x="0" y="0" width="376" height="75">
+		</rect>
+	</svg>
+	<svg class="___61">
+		<rect id="___61" rx="0" ry="0" x="0" y="0" width="376" height="75">
+		</rect>
+	</svg>
+	<svg class="___62">
+		<rect id="___62" rx="0" ry="0" x="0" y="0" width="376" height="75">
+		</rect>
+	</svg>
+	<svg class="___64">
+		<rect id="___64" rx="0" ry="0" x="0" y="0" width="376" height="75">
+		</rect>
+	</svg>
+	<div id="__25">
+		<svg class="___34">
+			<rect id="___34" rx="0" ry="0" x="0" y="0" width="376" height="79">
+			</rect>
+		</svg>
+		<div id="UP_">
+			<span>UP!</span>
+		</div>
+		<svg class="___1">
+			<path id="___1" d="M 0 0 L 379 0">
+			</path>
+		</svg>
+	</div>
+	<div id="__15">
+		<svg class="___32">
+			<rect id="___32" rx="0" ry="0" x="0" y="0" width="375" height="87">
+			</rect>
+		</svg>
+		<svg class="___30">
+			<rect id="___30" rx="0" ry="0" x="0" y="0" width="375" height="82">
+			</rect>
+		</svg>
+		<svg class="___6">
+			<path id="___6" d="M 0 0 L 379 0">
+			</path>
+		</svg>
+	</div>
+	<svg class="bar">
+		<pattern elementId="bar_A10_Rectangle_162" id="bar_A10_Rectangle_162_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="bar_A10_Rectangle_162_pattern.png" xlink:href="bar_A10_Rectangle_162_pattern.png"></image>
+		</pattern>
+		<rect id="bar" rx="0" ry="0" x="0" y="0" width="105" height="83">
+		</rect>
+	</svg>
+	<a href="Title.html"><div id="__8">
+		<svg class="___19">
+			<rect id="___19" rx="10" ry="10" x="0" y="0" width="33" height="33">
+			</rect>
+		</svg>
+		<svg class="icon_write">
+			<pattern elementId="icon_write_A10_Rectangle_165" id="icon_write_A10_Rectangle_165_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="icon_write_A10_Rectangle_165_pattern.png" xlink:href="icon_write_A10_Rectangle_165_pattern.png"></image>
+			</pattern>
+			<rect id="icon_write" rx="0" ry="0" x="0" y="0" width="20" height="20">
+			</rect>
+		</svg>
+	</div></a>
+	<a href="Message.html"><div id="__11">
+		<svg class="___24">
+			<rect id="___24" rx="10" ry="10" x="0" y="0" width="56.538" height="42.067">
+			</rect>
+		</svg>
+		<svg class="news">
+			<pattern elementId="news_A10_Rectangle_168" id="news_A10_Rectangle_168_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="news_A10_Rectangle_168_pattern.png" xlink:href="news_A10_Rectangle_168_pattern.png"></image>
+			</pattern>
+			<rect id="news" rx="0" ry="0" x="0" y="0" width="24.769" height="24.769">
+			</rect>
+		</svg>
+	</div></a>
+	<div id="__10">
+		<svg class="___23">
+			<rect id="___23" rx="10" ry="10" x="0" y="0" width="84" height="62.5">
+			</rect>
+		</svg>
+		<svg class="friends">
+			<pattern elementId="friends_A10_Rectangle_171" id="friends_A10_Rectangle_171_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="friends_A10_Rectangle_171_pattern.png" xlink:href="friends_A10_Rectangle_171_pattern.png"></image>
+			</pattern>
+			<rect id="friends" rx="0" ry="0" x="0" y="0" width="32.88" height="28.102">
+			</rect>
+		</svg>
+	</div>
+	<a href="Home_Page.html"><div id="__13">
+		<svg class="___22">
+			<rect id="___22" rx="10" ry="10" x="0" y="0" width="56.538" height="42.067">
+			</rect>
+		</svg>
+		<svg class="home__1_">
+			<pattern elementId="home__1__A10_Rectangle_174" id="home__1__A10_Rectangle_174_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="home__1__A10_Rectangle_174_pattern.png" xlink:href="home__1__A10_Rectangle_174_pattern.png"></image>
+			</pattern>
+			<rect id="home__1_" rx="0" ry="0" x="0" y="0" width="21.216" height="21.216">
+			</rect>
+		</svg>
+	</div></a>
+	<a href="Profile.html"><div id="__12">
+		<svg class="___25">
+			<rect id="___25" rx="10" ry="10" x="0" y="0" width="56.538" height="42.067">
+			</rect>
+		</svg></a>
+		<div id="__9">
+			<svg class="___3">
+				<path id="___3" d="M 0 0 L 16.87152099609375 0">
+				</path>
+			</svg>
+			<svg class="___4">
+				<path id="___4" d="M 0 0 L 16.87152099609375 0">
+				</path>
+			</svg>
+			<svg class="___5">
+				<path id="___5" d="M 0 0 L 16.87152099609375 0">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<div id="Friends_A10_Text_62">
+		<span>Friends</span>
+	</div>
+	<div id="Daddy_Pig">
+		<span>Daddy Pig</span>
+	</div>
+	<div id="George">
+		<span>George</span>
+	</div>
+	<div id="Mummy_Pig">
+		<span>Mummy Pig</span>
+	</div>
+	<div id="Uncle_Pig_____">
+		<span>Uncle Pig     </span>
+	</div>
+	<div id="Auntie_Pig">
+		<span>Auntie Pig</span>
+	</div>
+	<div id="Chloe_Pig">
+		<span>Chloe Pig</span>
+	</div>
+	<svg class="peppa_dad">
+		<pattern elementId="peppa_dad_A10_Rectangle_177" id="peppa_dad_A10_Rectangle_177_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="peppa_dad_A10_Rectangle_177_pattern.png" xlink:href="peppa_dad_A10_Rectangle_177_pattern.png"></image>
+		</pattern>
+		<rect id="peppa_dad" rx="0" ry="0" x="0" y="0" width="97" height="54">
+		</rect>
+	</svg>
+	<svg class="login_and_sign_up">
+		<pattern elementId="login_and_sign_up_A10_Rectangle_179" id="login_and_sign_up_A10_Rectangle_179_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="login_and_sign_up_A10_Rectangle_179_pattern.png" xlink:href="login_and_sign_up_A10_Rectangle_179_pattern.png"></image>
+		</pattern>
+		<rect id="login_and_sign_up" rx="0" ry="0" x="0" y="0" width="39" height="42">
+		</rect>
+	</svg>
+	<svg class="ID1860172_0">
+		<pattern elementId="ID1860172_0_A10_Rectangle_181" id="ID1860172_0_A10_Rectangle_181_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="ID1860172_0_A10_Rectangle_181_pattern.png" xlink:href="ID1860172_0_A10_Rectangle_181_pattern.png"></image>
+		</pattern>
+		<rect id="ID1860172_0" rx="0" ry="0" x="0" y="0" width="54" height="54">
+		</rect>
+	</svg>
+	<svg class="cc">
+		<pattern elementId="cc_A10_Rectangle_183" id="cc_A10_Rectangle_183_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="cc_A10_Rectangle_183_pattern.png" xlink:href="cc_A10_Rectangle_183_pattern.png"></image>
+		</pattern>
+		<rect id="cc" rx="0" ry="0" x="0" y="0" width="54" height="40">
+		</rect>
+	</svg>
+	<svg class="ID1989956_0">
+		<pattern elementId="ID1989956_0_A10_Rectangle_185" id="ID1989956_0_A10_Rectangle_185_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="ID1989956_0_A10_Rectangle_185_pattern.png" xlink:href="ID1989956_0_A10_Rectangle_185_pattern.png"></image>
+		</pattern>
+		<rect id="ID1989956_0" rx="0" ry="0" x="0" y="0" width="53" height="53">
+		</rect>
+	</svg>
+	<svg class="Mummy_Pig_A10_Rectangle_186">
+		<pattern elementId="Mummy_Pig_A10_Rectangle_187" id="Mummy_Pig_A10_Rectangle_187_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="Mummy_Pig_A10_Rectangle_187_pattern.png" xlink:href="Mummy_Pig_A10_Rectangle_187_pattern.png"></image>
+		</pattern>
+		<rect id="Mummy_Pig_A10_Rectangle_186" rx="0" ry="0" x="0" y="0" width="35" height="47">
+		</rect>
+	</svg>
+</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Animation Screen </title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: Before_Cover;
+	}
+	#Before_Cover * {
+		margin: 0;
+		padding: 0;
+	}
+	#Before_Cover {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 375px;
+		height: 812px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: Before Cover;
+		--web-view-id: Before_Cover;
+		--web-enable-deep-linking: true;
+	}
+	#___3 {
+		opacity: 1;
+		fill: url(#LinearGradientFill1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.___3 {
+		position: absolute;
+		overflow: visible;
+		width: 375px;
+		height: 812px;
+		left: 0px;
+		top: 0px;
+	}
+	#ID3 {
+		opacity: 1;
+		fill: url(#ID3_A27_Rectangle_383_pattern);
+	}
+	.ID3 {
+		position: absolute;
+		overflow: visible;
+		width: 64px;
+		height: 58px;
+		left: 565px;
+		top: 540px;
+	}
+	#ID4 {
+		opacity: 1;
+		fill: url(#ID4_A27_Rectangle_385_pattern);
+	}
+	.ID4 {
+		position: absolute;
+		overflow: visible;
+		width: 114px;
+		height: 64px;
+		left: -329px;
+		top: 582px;
+	}
+	#ID1 {
+		opacity: 1;
+		fill: url(#ID1_A27_Rectangle_387_pattern);
+	}
+	.ID1 {
+		position: absolute;
+		overflow: visible;
+		width: 40px;
+		height: 16px;
+		left: -68px;
+		top: 227px;
+	}
+	#ID2 {
+		opacity: 1;
+		fill: url(#ID2_A27_Rectangle_389_pattern);
+	}
+	.ID2 {
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		height: 30px;
+		left: 428px;
+		top: 228px;
+	}
+
+	 #ID5 {
+
+                                /*fill: url(#ID4_A0_Rectangle_5_pattern);*/
+
+                                animation-name: move_5;
+
+                                animation-direction: normal;
+
+                                animation-delay: .5s;
+
+                                animation: move_5 1.5s 1;
+
+                                position: relative;
+
+                                width: 114px;
+
+                                height: 64px;
+
+                               left: 99px;
+
+                               top: 558px;
+
+                }
+
+                 @keyframes move_5 {
+
+                               0%   {left: -130px; top: 650px; opacity: 0;}
+
+                                100%  {left: 99px; top: 558px; opacity: 1;}
+
+                }
+                
+</style>
+</head>
+<body>
+<div id="Before_Cover">
+	<svg class="___3">
+		<linearGradient spreadMethod="pad" id="LinearGradientFill1" x1="0.5" x2="0.5" y1="0" y2="1">
+			<stop offset="0" stop-color="#00eea6" stop-opacity="1"></stop>
+			<stop offset="1" stop-color="#008c58" stop-opacity="1"></stop>
+		</linearGradient>
+		<rect id="___3" rx="0" ry="0" x="0" y="0" width="375" height="812">
+		</rect>
+	</svg>
+	<svg class="ID3">
+		<pattern elementId="ID3_A27_Rectangle_383" id="ID3_A27_Rectangle_383_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="ID3_A27_Rectangle_383_pattern.png" xlink:href="ID3_A27_Rectangle_383_pattern.png"></image>
+		</pattern>
+		<rect id="ID3" rx="0" ry="0" x="0" y="0" width="64" height="58">
+		</rect>
+	</svg>
+	<svg class="ID4">
+		<pattern elementId="ID4_A27_Rectangle_385" id="ID4_A27_Rectangle_385_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="ID4_A27_Rectangle_385_pattern.png" xlink:href="ID4_A27_Rectangle_385_pattern.png"></image>
+		</pattern>
+		<rect id="ID4" rx="0" ry="0" x="0" y="0" width="114" height="64">
+		</rect>
+	</svg>
+	<svg class="ID1">
+		<pattern elementId="ID1_A27_Rectangle_387" id="ID1_A27_Rectangle_387_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="ID1_A27_Rectangle_387_pattern.png" xlink:href="ID1_A27_Rectangle_387_pattern.png"></image>
+		</pattern>
+		<rect id="ID1" rx="0" ry="0" x="0" y="0" width="40" height="16">
+		</rect>
+	</svg>
+	<svg class="ID2">
+		<pattern elementId="ID2_A27_Rectangle_389" id="ID2_A27_Rectangle_389_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="ID2_A27_Rectangle_389_pattern.png" xlink:href="ID2_A27_Rectangle_389_pattern.png"></image>
+		</pattern>
+		<rect id="ID2" rx="0" ry="0" x="0" y="0" width="56" height="30">
+		</rect>
+	</svg>
+</div>
+</body>
+</html>
